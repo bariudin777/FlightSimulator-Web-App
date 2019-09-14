@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        function normalize(lon, lat) {
+            var newLat = (lat + 90) * (window.innerHeight / 180);
+            var newLon = (lon + 180) * (window.innerWidth / 360);
+            return { "lon": newLon, "lat": newLat };
+        }
+    </script>
+    <script>
+        function createPoint(xml) {
+            var lon = parseFloat($xml.find("lon").text());
+            var lat = parseFloat($xml.find("lat").text());
+            function lon() {
+                return lon;
+            }
+            function lat() {
+                return lat;
+            }
+            return {
+                lon: lon,
+                lat: lat
+            };
+        };
+    </script>
+
+    <script>
+        function drawPoint(lon,lat,ctx) {
+            ctx.beginPath();
+            ctx.arc(lon, lat, 5, 0, 2 * Math.PI);
+            ctx.closePath();
+            ctx.lineWidth = 4;
+            ctx.strokeStyle = "Blue";
+            ctx.stroke();
+            ctx.fillStyle = "red";
+            ctx.fill();
+        };
+    </script>
+
+    <script>
+        function drawNextLine(startLon, startLat, nextLon, nextLat, ctx) {
+            // Drawing the line between the points
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = 'red';
+            ctx.moveTo(startLon, startLat);
+            ctx.lineTo(nextLon, nextLat);
+            ctx.stroke();
+
+        }
+    </script>
+
+    @RenderBody()
+
+</body>
+</html>

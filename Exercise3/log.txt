@@ -1,0 +1,198 @@
+commit 7792d63023ac5754b3a258dee21111da46641f96
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 22:59:27 2019 +0300
+
+    Final Commit!
+
+commit 689c7086f4562b8ddd49cd21f4356985e3d00268
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 22:58:32 2019 +0300
+
+    Final Commit
+
+commit d7b8b122c93e2dda811151ebce2d463f1eb05c02
+Merge: f7a85b6 c653ab1
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 21:45:24 2019 +0300
+
+    Normalization
+
+commit f7a85b651ce36623255dc1cc65f0a34ce0a421ee
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 21:42:45 2019 +0300
+
+    AfterNormalize
+
+commit c653ab103acb76e9e57cb09b3e99272f95663b82
+Merge: a516a14 c1ca70c
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Wed Jun 5 21:39:56 2019 +0300
+
+    final merged
+
+commit a516a14d3a5fcaa0ca7386a99e8a40bb4c5eb394
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Wed Jun 5 21:37:58 2019 +0300
+
+    final merge
+
+commit c1ca70c73113c238900e99a0074cba2b012fb8e0
+Merge: e4958d9 1022ec4
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 20:55:39 2019 +0300
+
+    Debag
+
+commit e4958d9fc673aa5c29b5b82c61be29ebe85e63f9
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 20:54:14 2019 +0300
+
+    Debug3
+
+commit 1022ec4a88195f1e4db3b260da3804521365cd38
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Wed Jun 5 20:10:58 2019 +0300
+
+    merged
+
+commit 38f8fb8d5e6b538f44497b061621af90a37eb1da
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 19:59:06 2019 +0300
+
+    Debug
+
+commit 827f9a33ff3141942da6af79be8b24ae5554b41f
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Wed Jun 5 17:25:45 2019 +0300
+
+    Changed Client and GetLocation logic
+
+commit ed814f3d6fd38f4211779ba859f2024dbc7c8a64
+Merge: 6fb74d0 68eee29
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Wed Jun 5 13:03:11 2019 +0300
+
+    MERGED
+
+commit 6fb74d03c9a0ae9e1e98d41db5dff333a347cb9d
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Wed Jun 5 13:00:26 2019 +0300
+
+    ready for merge
+
+commit 68eee29bdd3177479bfbbc8b6acdd1c9e94b6249
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Wed Jun 5 00:48:06 2019 +0300
+
+    Normalize Lat/Lon, add ip+port
+
+commit be670475722bc9809a328f726920040899e14341
+Merge: bd9c6b4 be550ec
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Mon Jun 3 23:42:46 2019 +0300
+
+    View
+
+commit bd9c6b45dd8e3b3e9876f6926f9090c8a2daa695
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Mon Jun 3 23:41:35 2019 +0300
+
+    ViewChange
+
+commit be550ec03d62276213dc6de3ccb037d9b7a83cb8
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Mon Jun 3 23:41:24 2019 +0300
+
+    Merged
+
+commit 6622be022ac042698f23c595b556e6fc040b4a29
+Merge: e5156b1 b5dbed1
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Sun Jun 2 15:02:26 2019 +0300
+
+    Not to use
+
+commit 0b825b0874ac9e15fbd92d581940eb284737570a
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Sun Jun 2 15:01:55 2019 +0300
+
+    client
+
+commit b5dbed117cc5fdb170844204ec2533799b8764be
+Merge: 87aa582 dd010ee
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Sun Jun 2 14:03:14 2019 +0300
+
+    Updated
+
+commit e5156b1a6a4d14c70018e231be291bbc735c18b4
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Sun Jun 2 14:02:35 2019 +0300
+
+    Same Shit
+
+commit 87aa5827b34464dd7ac1eee56db10205443db65b
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Sun Jun 2 14:01:44 2019 +0300
+
+    Updated
+
+commit dd010ee2adc91a8c6b4c6b219458bc57402a9ce0
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Fri May 31 22:24:02 2019 +0300
+
+    Connection to socket problem
+
+commit 808c7babfcb212ef2f2939bb344b029c4029871a
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Fri May 31 16:53:59 2019 +0300
+
+    Updated Client
+
+commit 1fb63ea6bd6e87434664198c43610dd208e58f56
+Author: daniel bariudin <daniel.bariudin@live.biu.ac.il>
+Date:   Fri May 31 11:31:12 2019 +0300
+
+    Connection debug
+
+commit dd81e9a5ef871456a3a30f9a8a48f3c8ade29a96
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Fri May 31 03:48:41 2019 +0300
+
+    Created Client
+
+commit beea25ec5edce9663f3571b0139bb49970611acc
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Fri May 31 02:24:48 2019 +0300
+
+    Created Client
+
+commit ffe95953d8d05efca237abda1bab063bfaa3a80f
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Thu May 30 19:12:17 2019 +0300
+
+    Uploaded image to dir
+
+commit 605cc838dc1f7be721b5e50460c748a82dfa16b5
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Thu May 30 01:20:01 2019 +0300
+
+    Fixed Redirect function
+
+commit 987350edce528ddb15a9833ff1936f103d802a9d
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Mon May 27 14:54:07 2019 +0300
+
+    Created project
+
+commit a5ae2eea1075e699799b4f757fb5d0a6b28ae28b
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Mon May 27 14:06:07 2019 +0300
+
+    Add project files.
+
+commit 1be5714f4dc1f6deb8ae1fe09e06f65a1f7a5adc
+Author: Ariel Fenster <arielfenster1610@gmail.com>
+Date:   Mon May 27 14:06:03 2019 +0300
+
+    Add .gitignore and .gitattributes.

@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "SingleSample";
+}
+
+<style id="map1">
+
+    html, body {
+        margin: 0;
+        height: 100%;
+        background-image: url('/Content/export-map-share.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<canvas id="myCanvas" />
+<script>
+        var singlePointFunc = (function () {
+        $.ajax({
+            url: "@Url.Action("GetFlightData" , "Display")",
+            type: "post",
+            data: { 'isGetAllParameters': false },
+            success: function (xml) {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.canvas.width = window.innerWidth;
+                ctx.canvas.height = window.innerHeight;
+
+                var xmlDoc = $.parseXML(xml);
+                $xml = $(xmlDoc);
+
+                var point = createPoint(xml);
+                var lon = point.lon;
+                var lat = point.lat;
+                var norm = normalize(lon, lat);
+                drawPoint(norm.lon, norm.lat, ctx);
+            }
+        });
+
+    });
+      singlePointFunc();
+</script>

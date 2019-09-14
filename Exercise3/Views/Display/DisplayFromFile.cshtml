@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Exercise3.Models.Point>
+@{
+    ViewBag.Title = "DisplayFromFile";
+}
+
+<style id="map1">
+    html, body {
+        margin: 0;
+        height: 100%;
+        background-image: url('/Content/export-map-share.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<canvas id="myCanvas" />
+
+<script>
+   
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
+    
+    var currLon = parseFloat(@ViewBag.lon);
+    var currLat = parseFloat(@ViewBag.lat);
+    var norm = normalize(currLon, currLat);
+    drawPoint(norm.lon, norm.lat, ctx);
+    var nextLon;
+    var nextLat;
+    var intervals = @Session["frequency"] * 1000;
+    //var isFirst = true;
+    
+    var i = setInterval(function () {
+        $.post("@Url.Action("GetPoint","Display")").done(function (data) {
+            data = JSON.parse(data);
+            if (data != null) {
+                var norma = normalize(data.Lon, data.Lat);
+                nextLon = parseFloat(norma.lon);
+                nextLat = parseFloat(norma.lat);
+                drawNextLine(currLon, currLat, nextLon, nextLat, ctx);
+                currLon = nextLon;
+                currLat = nextLat;
+            } else {
+                alert("end of route");
+                clearInterval(i);
+            }
+        });
+    }, intervals);
+
+
+
+
+</script>

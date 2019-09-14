@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "SaveAndDisplay";
+}
+
+<style id="map1">
+    html, body {
+        margin: 0;
+        height: 100%;
+        background-image: url('/Content/export-map-share.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<canvas id="myCanvas" />
+<script>
+    $.post("@Url.Action("GetFlightData","Display")",{ 'isGetAllParameters': true }).done(function (xml) {
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.canvas.width = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        var xmlDoc = $.parseXML(xml);
+        $xml = $(xmlDoc);
+        // Creating the initial point
+        var currPoint = createPoint(xml);
+        var currLon = currPoint.lon;
+        var currLat = currPoint.lat;
+        var norm = normalize(currLon, currLat);
+        drawPoint(norm.lon, norm.lat, ctx);
+        //var fileName = "@ViewBag.fileName";
+
+        var intervals = @Session["frequency"] * 1000;
+        var stop = @Session["duration"]* 1000;
+
+        var i = setInterval(function () {
+            $.post("@Url.Action("GetFlightData","Display")", { 'isGetAllParameters': true }).done(function (xml) {
+                var xmlDoc = $.parseXML(xml);
+                $xml = $(xmlDoc);
+                var newPoint = createPoint(xml);
+                var norma = normalize(newPoint.lon, newPoint.lat);
+                var newLon = norma.lon;
+                var newLat = norma.lat;
+                drawNextLine(currLon,currLat,newLon,newLat,ctx);
+
+                // Updating the 'current' point to be the last point created
+                currLon = newLon;
+                currLat = newLat;
+            });
+        }, intervals);
+        setTimeout(function () {
+            clearInterval(i);
+            $.ajax({
+                url: "@Url.Action("SaveData", "Display")",
+                type: "Post",
+                data: { 'fileName': "@ViewBag.fileName" },
+             success: function(){
+                },
+            });
+        }, stop);
+    });
+</script>
