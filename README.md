@@ -17,7 +17,7 @@ General:
   
    And displaying first location of the plane( by data from Flight-Gear Simulator):
    
-   
+   ![](pic1.png)
   
   
 
