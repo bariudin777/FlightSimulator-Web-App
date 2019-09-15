@@ -31,4 +31,14 @@ General:
   
   3.     /save/127.0.0.1/5400/4/10/flight1 :
 
+  •	We will sample planes location from simulator every 4 times per sec,  for 10 sec.
+  
+  •	Will save the data in a text file - “flight1”
+ 
+  4. /display/flight1/4 :
+
+  •	We will load from the data-base (“flight1” file) and load it to our map 4 times per sec.
+   
+  •	In the end app run, we will display “Finish” alert.
+
   
