@@ -34,8 +34,9 @@ General:
   •	We will sample planes location from simulator every 4 times per sec,  for 10 sec.
   
   •	Will save the data in a text file - “flight1”
+  
  
-  4. /display/flight1/4 :
+  4.     /display/flight1/4 :
 
   •	We will load from the data-base (“flight1” file) and load it to our map 4 times per sec.
    
