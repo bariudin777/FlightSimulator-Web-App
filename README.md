@@ -9,7 +9,7 @@ General:
   
   Description of the addresses:
   
-  1. /display/127.0.0.1/5400 :
+  1.      /display/127.0.0.1/5400 :
   
   -	Displaying worlds map- with our coordinate’s:
   
@@ -19,7 +19,7 @@ General:
    
    ![](pic1.png)
   
-  2./display/127.0.0.1/5400/4:
+  2.     /display/127.0.0.1/5400/4:
   
   Notes:
   
