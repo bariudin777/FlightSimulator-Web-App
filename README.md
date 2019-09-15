@@ -19,16 +19,16 @@ General:
    
    ![](pic1.png)
   
-  2.     /display/127.0.0.1/5400/4:
+  2.     /display/127.0.0.1/5400/4 :
   
   Notes:
   
-  1. Here we samplanig the Lon & Lat of the plane, and displaying the route on the map.
+   1. Here we samplanig the Lon & Lat of the plane, and displaying the route on the map.
   
-  2. The view will refresh itself every 4 seconds.
+   2. The view will refresh itself every 4 seconds.
   
   ![](pic2.png)
   
+  3.     /save/127.0.0.1/5400/4/10/flight1 :
+
   
-
-
